@@ -13,8 +13,12 @@
 
 <body>
     <div id="app">
-
-
+        <h1>TO DO THINGS</h1>
+        <ol>
+            <li v-for="(thing,index) in toDoThings">
+                {{ index+1 }} - {{ thing.text }}
+            </li>
+        </ol>
     </div>
 </body>
 

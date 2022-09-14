@@ -7,8 +7,17 @@
 
 body {
     font-family: sans-serif;
+    text-align: center;
 }
 
 /* utilities */
 
 /* content */
+
+ol {
+    padding-top: 40px;
+}
+
+li {
+    margin: 8px auto;
+}
