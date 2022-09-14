@@ -24,6 +24,7 @@ const app = new Vue(
     {
         el: `#app`,
         data: {
+            yetToDo: `line-through`,
             toDoThings: [
                 {
                     text: `Fai la spesa`,
@@ -49,7 +50,9 @@ const app = new Vue(
         },
         methods: {
             removeItem: function (thing) {
-                this.toDoThings.splice(this.toDoThings.indexOf(thing), 1)
+                console.log(thing);
+                this.toDoThings.splice(thing, 1)
+
             }
         }
     }

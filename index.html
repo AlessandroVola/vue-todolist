@@ -17,11 +17,11 @@
         <ol>
             <li v-for="(thing,index) in toDoThings">
                 {{ index+1 }} -
-                <span>
+                <span v-bind:class="">
                     {{ thing.text }}
                 </span>
                 <span>
-                    <button class="remove" @click="removeItem"> X </button>
+                    <button class="remove" @click="removeItem(index)"> X </button>
                 </span>
             </li>
         </ol>
