@@ -14,6 +14,10 @@
 <body>
     <div id="app">
         <h1>TO DO THINGS</h1>
+        <div>
+            <input v-model="newThing" type="text" placeholder="Nuova Task" name="" id="">
+            <button @click="addItem">Aggiungi</button>
+        </div>
         <ol>
             <li v-for="(thing,index) in toDoThings">
                 {{ index+1 }} -

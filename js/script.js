@@ -24,27 +24,27 @@ const app = new Vue(
     {
         el: `#app`,
         data: {
-            yetToDo: `line-through`,
+            newThing: ``,
             toDoThings: [
                 {
                     text: `Fai la spesa`,
-                    done: false
+                    done: false,
                 },
                 {
                     text: `Porta il cane a spasso`,
-                    done: true
+                    done: true,
                 },
                 {
                     text: `Paga le bollette`,
-                    done: false
+                    done: false,
                 },
                 {
                     text: `Prenota il barbiere`,
-                    done: true
+                    done: true,
                 },
                 {
                     text: `Compra giacca per la montagna`,
-                    done: false
+                    done: false,
                 },
             ]
         },
@@ -52,8 +52,12 @@ const app = new Vue(
             removeItem: function (thing) {
                 console.log(thing);
                 this.toDoThings.splice(thing, 1)
-
+            },
+            addItem: function (newThing) {
+                this.newThing = ``;
+                this.toDoThings.push(this.newThing)
             }
         }
     }
 )
+
