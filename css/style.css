@@ -21,3 +21,14 @@ ol {
 li {
     margin: 8px auto;
 }
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.remove {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 5px;
+}

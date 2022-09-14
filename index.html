@@ -16,7 +16,13 @@
         <h1>TO DO THINGS</h1>
         <ol>
             <li v-for="(thing,index) in toDoThings">
-                {{ index+1 }} - {{ thing.text }}
+                {{ index+1 }} -
+                <span>
+                    {{ thing.text }}
+                </span>
+                <span>
+                    <button class="remove" @click="removeItem"> X </button>
+                </span>
             </li>
         </ol>
     </div>

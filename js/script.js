@@ -48,7 +48,9 @@ const app = new Vue(
             ]
         },
         methods: {
-
+            removeItem: function (thing) {
+                this.toDoThings.splice(this.toDoThings.indexOf(thing), 1)
+            }
         }
     }
 )
