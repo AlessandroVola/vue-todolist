@@ -21,7 +21,7 @@
         <ol>
             <li v-for="(thing,index) in toDoThings">
                 {{ index+1 }} -
-                <span v-bind:class="">
+                <span v-bind:class=" thing.done ? `done` : `notDone`">
                     {{ thing.text }}
                 </span>
                 <span>

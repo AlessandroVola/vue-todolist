@@ -15,14 +15,15 @@ body {
 /* content */
 
 ol {
-    padding-top: 40px;
+    margin-top: 40px;
+    border: 1px solid black;
 }
 
 li {
     margin: 8px auto;
 }
 
-.line-through {
+.done {
     text-decoration: line-through;
 }
 
