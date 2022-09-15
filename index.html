@@ -15,7 +15,7 @@
     <div id="app">
         <h1>TO DO THINGS</h1>
         <div>
-            <input v-model="newThing" type="text" placeholder="Nuova Task" name="" id="">
+            <input v-model="newThing" type="text" placeholder="Nuova Task" @keyup.enter="addItem">
             <button @click="addItem">Aggiungi</button>
         </div>
         <ol>

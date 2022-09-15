@@ -54,7 +54,11 @@ const app = new Vue(
                 this.toDoThings.splice(thing, 1)
             },
             addItem: function (newThing) {
-                this.newThing = ``;
+                console.log(this.newThing)
+                newThing = {
+                    text: this.newThing,
+                    done: false
+                }
                 this.toDoThings.push(this.newThing)
             }
         }
